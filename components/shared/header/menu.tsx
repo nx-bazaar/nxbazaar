@@ -1,8 +1,9 @@
 import {ShoppingCartIcon,UserIcon} from 'lucide-react'
 import Link from 'next/link'
-export default function Menu() {
-    return (
-        <div className='flex justify-end'>
+
+const Menu = () => {
+  return (
+    <div className='flex justify-end'>
       <nav className='md:flex gap-3 hidden w-full'>
      <Link href='/cart' className='header-button'>
      <UserIcon className='w-6 h-6' />
@@ -15,12 +16,22 @@ export default function Menu() {
 
      </Link>
       </nav>
-      
-          
-          
-            
-          
-      
-    </div>
-    )
+      </div>
+  );
 }
+
+export default Menu;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,7 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '../../ui/select'
-import {APP_NAME} from '@/lib/constants'
+
 const categories = ['men','woman', 'kids', 'accessories']
 export default async function Search() {
   

@@ -4,8 +4,8 @@ import Menu from './menu'
 
 import Search from './search'
 import data from '@/lib/data'
-import Sidebar from './sidebar'
 
+import { APP_NAME } from '@/lib/constants'
 
 export default async function Header() {
   
@@ -38,7 +38,7 @@ export default async function Header() {
         </div>
       </div>
       <div className='flex items-center px-3 mb-[1px]  bg-gray-800'>
-        <Sidebar categories={categories} />
+        
         <div className='flex items-center flex-wrap gap-3 overflow-hidden   max-h-[42px]'>
           {data.headerMenus.map((menu) => (
             <Link
@@ -46,7 +46,7 @@ export default async function Header() {
               key={menu.href}
               className='header-button !p-2 '
             >
-              {t('Header.' + menu.name)}
+             
             </Link>
           ))}
         </div>
